@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#ffffff,#f5f7ff);
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+/* TOP BAR */
+
+.top-links{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    padding:20px 30px;
+}
+
+.top-links a{
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+.top-links a:hover{
+    text-decoration:underline;
+}
+
+.signin{
+    background:#1a73e8;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.signin:hover{
+    background:#1666c1;
+}
+
+/* MAIN */
+
+.main{
+    text-align:center;
+    margin-top:-100px;
+}
+
+/* GOOGLE LOGO */
+
+.logo{
+    font-size:95px;
+    margin-bottom:35px;
+    font-weight:bold;
+}
+
+.blue{
+    color:#4285F4;
+}
+
+.red{
+    color:#DB4437;
+}
+
+.yellow{
+    color:#F4B400;
+}
+
+.green{
+    color:#0F9D58;
+}
+
+/* SEARCH BOX */
+
+.search-box{
+    width:55%;
+    margin:auto;
+    background:white;
+    border-radius:35px;
+    padding:14px 20px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
+
+.search-box:hover{
+    box-shadow:0 5px 25px rgba(0,0,0,0.18);
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:17px;
+}
+
+.icon{
+    font-size:18px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:35px;
+}
+
+.buttons button{
+    background:#f8f9fa;
+    border:none;
+    padding:12px 24px;
+    margin:10px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buttons button:hover{
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
+    transform:translateY(-2px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#f2f2f2;
+    padding:18px 30px;
+    color:#555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .logo{
+        font-size:60px;
+    }
+
+    .search-box{
+        width:90%;
+    }
+
+    .top-links{
+        gap:10px;
+        padding:15px;
+    }
+
+}
