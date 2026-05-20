@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f5f7fb;
+    color: #222;
+}
+
+header{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    min-height: 80vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ffe082;
+}
+
+.hero{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button{
+    background: #ffca28;
+    color: #222;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: white;
+    transform: scale(1.05);
+}
+
+section{
+    padding: 50px 8%;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #4a148c;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+}
+
+.about img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px gray;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span{
+    background: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px #ccc;
+    font-weight: bold;
+}
+
+.project-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ccc;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h3{
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea{
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea{
+    height: 120px;
+}
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+}
